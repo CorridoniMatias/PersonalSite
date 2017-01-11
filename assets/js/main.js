@@ -111,3 +111,15 @@
 	});
 
 })(jQuery);
+
+window.onload = function ()
+{
+	if(window.location.hash == "#enviado")
+    {
+        $("#forms>form:first-child").detach();
+        $('html,body').animate({scrollTop: $("#contacto").offset().top},'slow');
+    }
+        
+    else
+        $("#forms>form:last-child").detach();
+}

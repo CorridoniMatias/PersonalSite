@@ -112,26 +112,37 @@
 								<div class="container">
 									<h3>Contacto</h3>
 									<p>Si tenés interés en contactarme, podés hacerlo a través del siguiente formulario. Por favor <span style='text-decoration:underline;font-weight:bold;'>recordá dejar tu email</span> para que pueda responderte! Gracias!</p>
-									<form method="post" action="https://formspree.io/contacto@corridoni.me">
-										<div class="row uniform">
-											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Nombre" /></div>
-											<div class="6u 12u(xsmall)"><input type="email" name="_replyto" id="email" placeholder="Email" /></div>
-											<input type="hidden" name="_next" value="/#enviado" />
-										</div>
-										<div class="row uniform">
-											<div class="12u"><input type="text" name="_subject" id="subject" placeholder="Asunto" /></div>
-										</div>
-										<div class="row uniform">
-											<div class="12u"><textarea name="message" id="message" placeholder="Mensaje" rows="6"></textarea></div>
-										</div>
-										<div class="row uniform">
-											<div class="12u">
-												<ul class="actions">
-													<li><input type="submit" class="special" value="Enviar" /></li>
-												</ul>
+                                    
+                                    <div id='forms'>
+                                        <form method="post" action="https://formspree.io/contacto@corridoni.me">
+                                            <div class="row uniform">
+                                                <div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Nombre" /></div>
+                                                <div class="6u 12u(xsmall)"><input type="email" name="_replyto" id="email" placeholder="Email" /></div>
+                                                <input type="hidden" name="_next" value="/#enviado" />
+                                            </div>
+                                            <div class="row uniform">
+                                                <div class="12u"><input type="text" name="_subject" id="subject" placeholder="Asunto" /></div>
+                                            </div>
+                                            <div class="row uniform">
+                                                <div class="12u"><textarea style='resize:vertical;' name="message" id="message" placeholder="Mensaje" rows="6"></textarea></div>
+                                            </div>
+                                            <div class="row uniform">
+                                                <div class="12u">
+                                                    <ul class="actions">
+                                                        <li><input type="submit" class="special" value="Enviar" /></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    
+                                        <form method="post" action="" id='enviado'>
+											<div class="row 50%">
+												<div class="12u">
+													<textarea style='resize:none;' readonly="true" name="m" id="contact-message" placeholder="Ya recibimos tu mensaje. Nos pondremos en contacto con vos a la brevedad. Gracias!" rows="4"></textarea>
+												</div>
 											</div>
-										</div>
-									</form>
+										</form>
+                                    </div>
 								</div>
 							</section>
 					</div>
