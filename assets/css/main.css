@@ -1570,7 +1570,13 @@
 		border-bottom: solid 1px #e4e4e4;
 		color: inherit;
 		text-decoration: none;
+        
 	}
+
+    p>a
+    {
+        color: #2BB690 !important;
+    }
 
 		a:hover {
 			border-bottom-color: transparent;
